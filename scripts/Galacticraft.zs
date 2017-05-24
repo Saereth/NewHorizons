@@ -172,6 +172,9 @@ recipes.remove(<GalacticraftCore:tile.enclosed:1>);
 // --- Sealable Aluminium Wire
 recipes.remove(<GalacticraftCore:tile.enclosed:14>);
 
+// --- Sealable ME Wire
+recipes.remove(<GalacticraftCore:tile.enclosed:13>);
+
 // --- Sealable heavy Aluminium Wire
 recipes.remove(<GalacticraftCore:tile.enclosed:15>);
 
@@ -640,6 +643,12 @@ recipes.addShaped(<GalacticraftCore:tile.enclosed:1>, [
 [OxygenPipe, TinDecoBlock, OxygenPipe],
 [null, OxygenPipe, File]]);
 
+// --- Sealable ME Wire
+recipes.addShaped(<GalacticraftCore:tile.enclosed:13>, [
+[HHammer, <appliedenergistics2:item.ItemMultiPart:11>, null],
+[<appliedenergistics2:item.ItemMultiPart:11>, TinDecoBlock, <appliedenergistics2:item.ItemMultiPart:11>],
+[null, <appliedenergistics2:item.ItemMultiPart:11>, File]]);
+
 // --- Sealable Aluminium Wire
 recipes.addShaped(<GalacticraftCore:tile.enclosed:14>, [
 [HHammer, GCAlWire, null],
@@ -888,31 +897,31 @@ recipes.addShaped(<GalacticraftMars:item.titanium_sword>, [
 
 // --- Desh Pickaxe
 recipes.addShaped(<GalacticraftMars:item.deshPick>, [
-[<gregtech:gt.metaitem.02:30512>, DeshPlate,DeshPlate],
+[<gregtech:gt.metaitem.02:30502>, DeshPlate,DeshPlate],
 [File, <ore:stickDesh>, DeshPlate],
 [null, <ore:stickDesh>, HHammer]]);
 
 // --- Desh Axe
 recipes.addShaped(<GalacticraftMars:item.deshAxe>, [
-[DeshPlate, DeshPlate, <gregtech:gt.metaitem.02:30512>],
+[DeshPlate, DeshPlate, <gregtech:gt.metaitem.02:30502>],
 [DeshPlate, <ore:stickDesh>, HHammer],
 [File, <ore:stickDesh>, null]]);
 
 // --- Desh Hoe
 recipes.addShaped(<GalacticraftMars:item.deshHoe>, [
-[DeshPlate, DeshPlate, <gregtech:gt.metaitem.02:30512>],
+[DeshPlate, DeshPlate, <gregtech:gt.metaitem.02:30502>],
 [File, <ore:stickDesh>, HHammer],
 [null, <ore:stickDesh>, null]]);
 
 // --- Desh Shovel
 recipes.addShaped(<GalacticraftMars:item.deshSpade>, [
-[File, DeshPlate, <gregtech:gt.metaitem.02:30512>],
+[File, DeshPlate, <gregtech:gt.metaitem.02:30502>],
 [null, <ore:stickDesh>, HHammer],
 [null, <ore:stickDesh>, null]]);
 
 // --- Desh Sword
 recipes.addShaped(<GalacticraftMars:item.deshSword>, [
-[null, DeshPlate, <gregtech:gt.metaitem.02:30512>],
+[null, DeshPlate, <gregtech:gt.metaitem.02:30502>],
 [File, DeshPlate, HHammer],
 [null, <ore:stickDesh>, null]]);
 
@@ -1578,7 +1587,7 @@ BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:11028>], [<GalacticraftMars:ite
 
 
 // --- Bacterial Sludge dublication
-Brewery.addRecipe(<liquid:binnie.bacteria> * 750, <dreamcraft:item.MysteriousCrystalDust>, <liquid:bacterialsludge> * 500, false);
+Brewery.addRecipe(<liquid:binnie.bacteria> * 750, <gregtech:gt.metaitem.01:2398>, <liquid:bacterialsludge> * 500, false);
 
 
 

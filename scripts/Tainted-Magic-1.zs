@@ -153,6 +153,8 @@ mods.thaumcraft.Infusion.removeRecipe(<TaintedMagic:ItemWandCap>);
 
 
 
+
+
 // --- Add Recipes ---
 
 
@@ -353,7 +355,7 @@ game.setLocalization("tc.research_text.CrystalDaggerGTNH", "Drip, drip, drop..."
 mods.thaumcraft.Research.addPage("CrystalDaggerGTNH", "tc.research_page.CrystalDaggerGTNH");
 game.setLocalization("tc.research_page.CrystalDaggerGTNH", "After having discovered the Essentia Crystallizer, you've managed to create a dagger that crystallizes the blood of your foes.<BR>Whenever a living creature is killed by this blade, a few drops of blood will be crystallized. It also seems that any blade that possesses the same Bloodlust effect will also crystallize any creature's blood upon death.<BR>You are certain that this is no ordinary blood, it is particularly interesting because Crimson Cult Attire seems to have similar properties.");
 mods.thaumcraft.Arcane.addShaped("CrystalDaggerGTNH",  <TaintedMagic:ItemCrystalDagger>, "terra 100, ignis 100, perditio 100, ordo 50, aer 50", [
-[<ore:screwThaumium>, <ore:craftingToolWrench>, <TGregworks:tGregToolPartKnifeBlade:107>.withTag({material: "Shadow"})], 
+[<ore:screwThaumium>, <ore:craftingToolWrench>, <TGregworks:tGregToolPartKnifeBlade:123>.withTag({material: "Shadow"})], 
 [null, <Thaumcraft:blockTube:7>, null], 
 [<Forestry:oakStick>, <ore:craftingToolScrewdriver>, <ore:screwThaumium>]]);
 mods.thaumcraft.Research.addArcanePage("CrystalDaggerGTNH", <TaintedMagic:ItemCrystalDagger>);
@@ -915,7 +917,7 @@ mods.thaumcraft.Warp.addToResearch("CaP_CrimsonClothGTNH", 4);
 // --- Shadow Metal Cap
 mods.thaumcraft.Research.orphanResearch("CAP_shadowmetal");
 mods.thaumcraft.Research.removeResearch("CAP_shadowmetal");
-mods.thaumcraft.Research.addResearch("CaP_ShadowmetalGTNH", "TM", "metallum 21, tenebrae 18, praecantatio 15, alienis 12, terra 9, lucrum 6, cognitio 3", -2, -2, 4, <dreamcraft:item.ShadowmetalCap>);
+mods.thaumcraft.Research.addResearch("CaP_ShadowmetalGTNH", "TM", "metallum 21, tenebrae 18, praecantatio 15, alienis 12, terra 9, lucrum 6, cognitio 3", -4, 4, 4, <dreamcraft:item.ShadowmetalCap>);
 mods.thaumcraft.Research.addPrereq("CaP_ShadowmetalGTNH", "CaP_ShadowClothGTNH", false);
 mods.thaumcraft.Research.addPrereq("CaP_ShadowmetalGTNH", "CAP_void", false);
 mods.thaumcraft.Research.addPrereq("CaP_ShadowmetalGTNH", "PRIMPEARL", false);

@@ -8,7 +8,7 @@ import mods.gregtech.Centrifuge;
 import mods.ic2.Compressor;
 import mods.ic2.Extractor;
 import mods.ic2.Macerator;
-import mods.nei.NEI;
+
 
 // --- Variables ---
 
@@ -394,6 +394,16 @@ recipes.addShaped(<harvestcraft:rainbowcurryItem>, [
 [<BiomesOPlenty:flowers2:3>, <minecraft:red_flower>, <minecraft:yellow_flower>, ],
 [<minecraft:bowl>, <harvestcraft:curryItem>, <harvestcraft:skilletItem>]]);
 
+// --- Lootbag Seeds
+recipes.addShapeless(<enhancedlootbags:lootbag:35>, [<dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>, <dreamcraft:item.CoinFarmer>]);
+
+// --- Market ---
+recipes.addShaped(<harvestcraft:market>, [
+[<ore:plateIron>, <ore:screwIron>, <ore:plateIron>],
+[<ore:gearGtSmallAnyBronze>, <minecraft:dispenser>, <ore:gearGtSmallAnyBronze>],
+[<ore:plateIron>, <ore:screwIron>, <ore:plateIron>]]);
+
+
 
 // --- Ordicted Things ---
 
@@ -615,13 +625,5 @@ Extractor.addRecipe(<harvestcraft:beeswaxItem>, <harvestcraft:candleberryItem> *
 // --- Salt
 Macerator.addRecipe(<gregtech:gt.metaitem.01:2817> * 9, <harvestcraft:spamcompressedsaltBlockalt>);
 
-
-
-
-
-// --- Hiding Stuff ---//
-
-// --- Sink
-NEI.hide(<harvestcraft:sink:*>);
-// --- Market
-NEI.hide(<harvestcraft:market>);
+// --- Corn Meal
+Macerator.addRecipe(<harvestcraft:cornmealItem>, <harvestcraft:cornItem>);

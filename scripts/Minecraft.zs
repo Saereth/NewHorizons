@@ -1122,10 +1122,16 @@ recipes.addShaped(Trapdoor * 3, [
 [<minecraft:wooden_slab:*>, Stick, <minecraft:wooden_slab:*>]]);
 
 // --- Pressure Plate
-recipes.addShapeless(<minecraft:stone_pressure_plate> * 2, [Saw, <minecraft:stone_slab>]);
+recipes.addShaped(<minecraft:stone_pressure_plate> * 2, [
+[Saw, <minecraft:stone_slab>, null],
+[null, null, null],
+[null, null, null]]);
 
 // --- Wooden Pressure Plate
-recipes.addShapeless(<minecraft:wooden_pressure_plate> * 2, [Saw, <ore:slabWood>]);
+recipes.addShaped(<minecraft:wooden_pressure_plate> * 2, [
+[Saw, <ore:slabWood>, null],
+[null, null, null],
+[null, null, null]]);
 
 //Glass Pane
 recipes.addShapeless(<minecraft:glass_pane> * 2, [Saw, Glass]);
@@ -2740,20 +2746,6 @@ mods.railcraft.BlastFurnace.addRecipe(<harvestthenether:netherLog:*>, false, fal
 
 
 
-// --- Thaumcraft Aspects Set ---
-
-
-// --- Blaze
-mods.thaumcraft.Aspects.set(<minecraft:blaze_powder>, "ignis 6, praecantatio 4, instrumentum 2");
-
-// --- Blaze Rod
-mods.thaumcraft.Aspects.set(<minecraft:blaze_rod>, "ignis 10, praecantatio 4");
-
-// --- Paper
-mods.thaumcraft.Aspects.set(<minecraft:paper>, "cognitio 4, aqua 2, arbor 1");
-
-
-
 
 // --- Alloy Smelter Recipes ---
 
@@ -3150,18 +3142,6 @@ FluidExtractor.addRecipe(null, <minecraft:sand:*>, <liquid:molten.glass> * 144, 
 
 // --- Molten Obsidian
 FluidExtractor.addRecipe(null, <minecraft:obsidian>, <liquid:obsidian.molten> * 288, 10000, 600, 30);
-
-
-
-
-// --- Implusion Compressor Recipes ---
-
-
-
-
-// --- Nether Star
-ImplosionCompressor.addRecipe([<minecraft:nether_star> * 3, <gregtech:gt.metaitem.01:807> * 4], <gregtech:gt.metaitem.01:2506> * 4, 48);
-
 
 
 

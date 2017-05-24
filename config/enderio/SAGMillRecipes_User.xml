@@ -135,7 +135,7 @@
       <output>
         <itemStack modID="minecraft" itemName="redstone" number="8" />
         <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.2" />
-        <itemStack modID="minecraft" itemName="redstone" itemMeta="1" chance="0.1" />
+        <itemStack modID="minecraft" itemName="redstone" number="1" chance="0.1" />
         <itemStack modID="minecraft" itemName="cobblestone" chance="0.15" />
       </output>
     </recipe>
@@ -15882,6 +15882,16 @@
   </recipe>
 <!-- End of basaltOres -->
 
+
+  <recipe name="CornMeal" energyCost="3600">
+    <input>
+      <itemStack oreDictionary="cropCorn" />
+    </input>
+    <output>
+      <itemStack oreDictionary="foodCornmeal" number="1" />
+      <itemStack oreDictionary="foodCornmeal" chance="0.5" />
+    </output>
+  </recipe>
 
 </recipeGroup>
 

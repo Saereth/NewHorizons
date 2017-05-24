@@ -211,7 +211,7 @@ mods.thaumcraft.Research.setComplexity("CAT_AMULET", 4);
 
 // --- Bottomless Pouch
 mods.thaumcraft.Infusion.addRecipe("ICHOR_POUCH", <Thaumcraft:FocusPouch>.withTag({Inventory: []}), 
-[<ThaumicTinkerer:kamiResource:1>, <Thaumcraft:BlockJarFilledItem>, <ThaumicTinkerer:kamiResource:1>, <Thaumcraft:FocusPortableHole>, <ThaumicTinkerer:kamiResource:1>, <Thaumcraft:TrunkSpawner>, <ThaumicTinkerer:kamiResource:1>, <gregtech:gt.metaitem.02:30500>],
+[<Thaumcraft:blockJar:3>, <ThaumicTinkerer:kamiResource:1>, <ThaumicTinkerer:kamiResource:1>, <Thaumcraft:FocusPortableHole>, <ThaumicTinkerer:kamiResource:1>, <Thaumcraft:TrunkSpawner>, <ThaumicTinkerer:kamiResource:1>, <gregtech:gt.metaitem.02:30500>],
 "vacuos 64, humanus 48, pannus 48, alienis 48, aer 64", <ThaumicTinkerer:ichorPouch>.withTag({Inventory: []}), 10);
 // -
 mods.thaumcraft.Research.setAspects("ICHOR_POUCH", "vacuos 15, pannus 15, alienis 12, humanus 9, motus 6, aer 3");
@@ -422,6 +422,9 @@ mods.thaumcraft.Infusion.addRecipe("PLACEMENT_MIRROR", <ThaumicTinkerer:blockTal
 mods.thaumcraft.Research.setAspects("PLACEMENT_MIRROR", "cognitio 15, fabrico 12, praecantatio 9, vitreus 6, alienis 3");
 mods.thaumcraft.Research.setComplexity("PLACEMENT_MIRROR", 4);
 mods.thaumcraft.Warp.addToResearch("PLACEMENT_MIRROR", 8);
+
+// --- Ichor Ingots
+furnace.addRecipe(<ThaumicTinkerer:kamiResource:2> * 2, <gregtech:gt.blockmetal8:13>);
 
 
 
